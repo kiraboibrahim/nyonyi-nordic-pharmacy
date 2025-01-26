@@ -1,12 +1,11 @@
 import { createBrowserRouter, RouteObject } from "react-router-dom";
-import Podcasts from "../components/Podcasts/Podcasts";
 import Contact from "../components/Contact/Contact";
 import Home from "../components/Home/Home";
 import Main from "../components/Main/Main";
 
 const routes: RouteObject[] = [
   {
-    path: "/",
+    path: import.meta.env.BASE_URL,
     element: <Main />,
     children: [
       {
@@ -16,10 +15,6 @@ const routes: RouteObject[] = [
       {
         path: "contact",
         element: <Contact />,
-      },
-      {
-        path: "podcasts",
-        element: <Podcasts />,
       },
     ],
   },

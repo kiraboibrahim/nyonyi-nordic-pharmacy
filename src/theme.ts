@@ -1,44 +1,47 @@
-import { extendTheme } from "@mui/joy/styles";
 
-declare module "@mui/joy/styles" {
+import { extendTheme } from '@mui/joy/styles';
+
+
+declare module '@mui/joy/styles' {
   // No custom tokens found, you can skip the theme augmentation.
 }
 
+
 const theme = extendTheme({
-  colorSchemes: {
-    light: {
-      palette: {
-        primary: {
-          "50": "#f5f2ef",
-          "100": "#e2d8cf",
-          "200": "#cfbfb0",
-          "300": "#bca590",
-          "400": "#a98b70",
-          "500": "#8f7156",
-          "600": "#6f5843",
-          "700": "#4f3f30",
-          "800": "#30261d",
-          "900": "#100d0a",
-        },
-      },
+  "colorSchemes": {
+    "light": {
+      "palette": {
+        "primary": {
+          "50": "#f1f8e9",
+          "100": "#dcedc8",
+          "200": "#c5e1a5",
+          "300": "#aed581",
+          "400": "#9ccc65",
+          "500": "#8bc34a",
+          "600": "#7cb342",
+          "700": "#689f38",
+          "800": "#558b2f",
+          "900": "#33691e"
+        }
+      }
     },
-    dark: {
-      palette: {
-        primary: {
-          "50": "#f5f2ef",
-          "100": "#e2d8cf",
-          "200": "#cfbfb0",
-          "300": "#bca590",
-          "400": "#a98b70",
-          "500": "#8f7156",
-          "600": "#6f5843",
-          "700": "#4f3f30",
-          "800": "#30261d",
-          "900": "#100d0a",
-        },
-      },
-    },
-  },
-});
+    "dark": {
+      "palette": {
+        "primary": {
+          "50": "#f1f8e9",
+          "100": "#dcedc8",
+          "200": "#c5e1a5",
+          "300": "#aed581",
+          "400": "#9ccc65",
+          "500": "#8bc34a",
+          "600": "#7cb342",
+          "700": "#689f38",
+          "800": "#558b2f",
+          "900": "#33691e"
+        }
+      }
+    }
+  }
+})
 
 export default theme;
